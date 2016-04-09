@@ -1,0 +1,83 @@
+@charset "utf-8";
+/*
+  author : uznam
+  description : regular css
+  verstion : 1.0
+*/
+
+.skip {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:2000;
+
+  a{
+    display:block;
+    width:0;
+    height:0;
+    font-size:0;
+
+    &:hover, &:focus, &:active {
+      display:block;
+      padding:9px 0;
+      height:16px;
+      width:100%;
+      text-align:center;
+      font-size:14px;
+      color:#fff;
+      background:#341d17;
+    }
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.horizon-list{
+  list-style:none;
+  font-size:0;
+  line-height: 0;
+  li{
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 1;
+  }
+}
+
+[data-uzn-component]{
+  position: relative;
+}
+.hidden{
+  display: none !important;
+}
+.align-l{
+  text-align: left !important;
+}
+.align-c{
+  text-align: center !important;
+}
+.align-r{
+  text-align: right !important;
+}
+.align-m{
+  vertical-align: middle !important;
+}
+.align-t{
+  vertical-align: top !important;
+}
+.grid{
+  display: table;
+  width: 100%;
+  .col{
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+.grid.fixed{
+  table-layout: fixed;
+}
